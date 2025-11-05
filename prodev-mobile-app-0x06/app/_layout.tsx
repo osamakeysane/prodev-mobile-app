@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 
-export default function RootLayout() {
+export default function _Layout() {
   return (
     <Stack
       screenOptions={{

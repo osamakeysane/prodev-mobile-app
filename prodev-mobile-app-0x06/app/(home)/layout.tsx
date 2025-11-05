@@ -7,7 +7,7 @@ import {
 } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 
-const HomeRootLayout = () => {
+const Layout = () => {
   return (
     <Tabs
       screenOptions={{
@@ -54,11 +54,11 @@ const HomeRootLayout = () => {
           ),
         }}
       />
+      {/* ✅ Header removed here */}
       <Tabs.Screen
         name="profile"
         options={{
           title: "Profile",
-          headerShown: true,
           tabBarIcon: ({ color }) => (
             <FontAwesome name="user-o" size={24} color="black" />
           ),
@@ -68,4 +68,4 @@ const HomeRootLayout = () => {
   );
 };
 
-export default HomeRootLayout;
+export default Layout;
